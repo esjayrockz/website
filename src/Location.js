@@ -9,7 +9,7 @@ const Location = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data: { main: { temp } } } = await axios.get(`http://${process.env.REACT_APP_WEATHERMAP_HOST}/datax/2.5/weather?id=5391959&units=metric&appid=${process.env.REACT_APP_WEATHERMAP_API_KEY}`);
+        const { data: { main: { temp } } } = await axios.get(`http://${process.env.REACT_APP_WEATHERMAP_HOST}/data/2.5/weather?id=5391959&units=metric&appid=${process.env.REACT_APP_WEATHERMAP_API_KEY}`);
         setTemp(temp);
         setError(null);
       }
