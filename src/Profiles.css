@@ -1,0 +1,14 @@
+.Icon {
+  height: 2rem;
+}
+
+.Logo {
+  color: #61dafb;
+  text-decoration: none;
+  padding: 0.15rem;
+}
+
+.Profile {
+  align-self: flex-end;
+  padding: 0 0.5rem 0.5rem 0;
+}
