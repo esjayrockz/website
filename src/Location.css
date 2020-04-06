@@ -7,4 +7,16 @@
   color: #4569a3;
 }
 
+.Link {
+  color: #3782c4;
+  cursor: pointer;
+}
+
+.Location-link {
+  margin-left: 2rem;
+}
+
+.Location-link:hover {
+  color: #76a0c4;
+}
 

@@ -4,6 +4,7 @@ import './Location.css';
 
 const Location = () => {
   const [temp, setTemp] = useState(null);
+  const [unit, setUnit] = useState('C');
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -11,7 +12,6 @@ const Location = () => {
       try {
         const { data: { main: { temp } } } = await axios.get(`https://${process.env.REACT_APP_WEATHERMAP_HOST}/data/2.5/weather?id=5391959&units=metric&appid=${process.env.REACT_APP_WEATHERMAP_API_KEY}`);
         setTemp(temp);
-        setError(null);
       }
       catch (e) {
         console.log('Cannot access weather API');
@@ -21,10 +21,29 @@ const Location = () => {
     fetchData();
   }, []);
 
+  const changeUnit = () => {
+    if (temp === null) return;
+
+    if (unit === 'C' ) {
+      const targetTemp = (temp * 9/5) + 32;
+      setTemp(targetTemp.toFixed(2));
+      setUnit('F');
+    } else {
+      const targetTemp = (temp - 32) * 5/9;
+      setTemp(targetTemp.toFixed(2));
+      setUnit('C');
+    }
+  }
+
   return (
     <div className="Location">
       <p><span className="Location-content">Current Location: </span>San Francisco, CA</p>
-      { !error && <p><span className="Location-content">Weather: </span>{temp == null ? 'Loading' : `${temp}°C`} </p> }
+      { !error && temp &&
+      <p>
+        <span className="Location-content">Weather: </span>
+        {temp === null ? 'Loading' : `${temp}°${unit}`}
+        <span onClick={changeUnit} className="Location-link Link">{unit === 'C' ? '(-> F°)' : '(-> C°)'}</span>
+      </p> }
       <p><span className="Location-content">Workplace: </span>Quest Analytics</p>
     </div>
   );
