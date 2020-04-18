@@ -42,7 +42,7 @@ const Location = () => {
       <p>
         <span className="Location-content">Weather: </span>
         {temp === null ? 'Loading' : `${temp}°${unit}`}
-        <span onClick={changeUnit} className="Location-link Link">{unit === 'C' ? '(-> F°)' : '(-> C°)'}</span>
+        <span onClick={changeUnit} className="Location-link Link">{`${String.fromCharCode(8618)} ${unit === 'C' ? 'F' : 'C'}°`}</span>
       </p> }
       <p><span className="Location-content">Workplace: </span>Quest Analytics</p>
     </div>
