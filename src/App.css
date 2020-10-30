@@ -1,4 +1,4 @@
-.App {
+.app {
   background-color: black;
   min-height: 100vh;
   display: flex;
@@ -10,7 +10,7 @@
 @media (prefers-reduced-motion: no-preference) {
 }
 
-.Name {
+.name {
   /* margin-left: auto;
   margin-right: auto; */
   /* position: relative;
@@ -19,12 +19,12 @@
   font-size: calc(10px + 2vmin);
 }
 
-.Name-text {
+.name-text {
   padding: 2rem 2rem 2rem 0.2rem;
   margin-right: 10rem;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
   text-decoration: none;
 }

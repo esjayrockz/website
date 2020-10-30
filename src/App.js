@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Profiles from './Profiles.js';
-import Location from './Location.js';
+import Left from './Left.js';
 import {useSpring, animated} from 'react-spring';
 import './App.css';
 
@@ -13,15 +13,15 @@ const App = () => {
   });
 
   return (
-    <div className="App">
-      <Location />
-      <header className="Name">
+    <div className="app">
+      <Left />
+      <header className="name">
         <animated.div
           style={animateColor}
           onMouseEnter={() => toggleNameColor(!nameToggle)}
           onMouseLeave={() => toggleNameColor(!nameToggle)}
         >
-          <p className="Name-text"> Suvajit Chakrabarty</p>
+          <p className="name-text"> Suvajit Chakrabarty</p>
         </animated.div>
       </header>
       <Profiles />
