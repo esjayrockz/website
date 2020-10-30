@@ -23,69 +23,69 @@ const Profiles = () => {
   });
 
   return (
-    <div className="Profile">
+    <div className="profile">
       <a
-        className="Logo"
+        className="logo"
         href="https://github.com/esjayrockz/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <animated.img
           src={githubLogo}
-          className="Icon"
+          className="icon"
           alt="logo"
           style={animateGithub}
           onMouseEnter={() => toggleLogo('github')}
           onMouseLeave={() => toggleLogo(null)} />
       </a>
       <a
-        className="Logo"
+        className="logo"
         href="https://www.linkedin.com/in/suvajit-chakrabarty/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <animated.img
           src={linkedinLogo}
-          className="Icon"
+          className="icon"
           alt="logo"
           style={animateLinkedin}
           onMouseEnter={() => toggleLogo('linkedin')}
           onMouseLeave={() => toggleLogo(null)} />
       </a>
       <a
-        className="Logo"
+        className="logo"
         href="https://twitter.com/esjayrockz"
         target="_blank"
         rel="noopener noreferrer"
       >
         <animated.img src={twitterLogo}
-          className="Icon"
+          className="icon"
           alt="logo"
           style={animateTwitter}
           onMouseEnter={() => toggleLogo('twitter')}
           onMouseLeave={() => toggleLogo(null)} />
       </a>
       <a
-        className="Logo"
+        className="logo"
         href="https://www.instagram.com/esjayrockz/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <animated.img src={instagramLogo} 
-          className="Icon"
+          className="icon"
           alt="logo"
           style={animateInstagram}
           onMouseEnter={() => toggleLogo('instagram')}
           onMouseLeave={() => toggleLogo(null)} />
       </a>
       <a
-        className="Logo"
+        className="logo"
         href="https://www.facebook.com/suvajit"
         target="_blank"
         rel="noopener noreferrer"
       >
         <animated.img src={facebookLogo}
-          className="Icon"
+          className="icon"
           alt="logo"
           style={animateFacebook}
           onMouseEnter={() => toggleLogo('facebook')}

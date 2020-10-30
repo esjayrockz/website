@@ -1,14 +1,14 @@
-.Icon {
+.icon {
   height: 2rem;
 }
 
-.Logo {
+.logo {
   color: #61dafb;
   text-decoration: none;
   padding: 0.15rem;
 }
 
-.Profile {
+.profile {
   align-self: flex-end;
   padding: 0 0.5rem 0.5rem 0;
 }
