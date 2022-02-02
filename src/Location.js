@@ -51,7 +51,7 @@ console.log(Number(temp));
           </Spring>}
         <span onClick={changeUnit} className="location-link link">{`${String.fromCharCode(8618)} ${unit === 'C' ? 'F' : 'C'}°`}</span>
       </p> }
-      <p><span className="location-content">Workplace: </span>Quest Analytics</p>
+      <p><span className="location-content">Workplace: </span>Flexport</p>
     </div>
   );
 }
